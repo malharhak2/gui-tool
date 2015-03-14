@@ -1,5 +1,25 @@
-@import "../libs/bourbon/dist/bourbon";
+@import "public/libs/bourbon/dist/bourbon";
 
 body {
 	background-color: #FFF;
+}
+
+.device {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 1136px;
+	width: 640px;
+	margin-top: -568px;
+	margin-left: -320px;
+	background-color: grey;
+	border: 2px solid black;
+}
+
+#screen {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	left: 0;
+	top: 0;
 }

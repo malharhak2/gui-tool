@@ -1,7 +1,16 @@
 requirejs.config ({
-	baseUrl: 'js/'
+	baseUrl: 'js/',
+	paths: {
+		dat: "../libs/dat.gui"
+	},
+	shim: {
+		dat: {
+			exports: "dat"
+		}
+	},
+	urlArgs: "d=" + Date.now()
 });
 
-require([], function () {
-	console.log('Hello world');
+requirejs(["editor", "gameloop"], function (editor, gameloop) {
+	gameloop();
 });
