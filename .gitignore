@@ -1,0 +1,5 @@
+node_modules/*
+public/css/*
+public/libs/*
+.sass-cache/*
+bin/*
