@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 			compile : {
 				files : [{
 					expand: true,
-					cwd : 'public/scss',
+					cwd : 'scss',
 					src : ['*.scss'],
 					dest: 'public/css',
 					ext: '.css'
@@ -16,11 +16,6 @@ module.exports = function (grunt) {
 			client: {
 				files: {
 					src: ['public/js/**/*.js']
-				}
-			},
-			server: {
-				files: {
-					src: ['server/**/*.js']
 				}
 			}
 		},
@@ -35,10 +30,6 @@ module.exports = function (grunt) {
 			client: {
 				files: ['public/js/**/*.js'],
 				tasks: ['jshint:client']
-			},
-			server: {
-				files: ['server/**/*.js'],
-				tasks: ['jshint:server']
 			}
 		}
 	});
